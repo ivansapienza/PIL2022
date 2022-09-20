@@ -371,7 +371,7 @@ class Menu:
         """
 
         print("----------------------"
-              "\nJUEGO GENERICO"
+              "\nALBION OFFLINE"
               "\n----------------------"
               "\n1- Crear personaje"
               "\n2- Enfrentamientos"
@@ -768,6 +768,13 @@ class main:
                 Menu.otraOperacion()
                 opcionInterna = Opcion.seleccionar()
 
+                while opcionInterna != 1 and opcionInterna != 2:
+
+                    print("--------------------------------------"
+                          "\nLa opcion seleccionada es incorrecta."
+                          "\n--------------------------------------")
+                    opcionInterna = Opcion.seleccionarValida()
+
                 if opcionInterna == 1:
                     opcion = -1
                 else:
@@ -818,6 +825,13 @@ class main:
 
                 Menu.otraOperacion()
                 opcionInterna = Opcion.seleccionar()
+
+                while opcionInterna != 1 and opcionInterna != 2:
+
+                    print("--------------------------------------"
+                          "\nLa opcion seleccionada es incorrecta."
+                          "\n--------------------------------------")
+                    opcionInterna = Opcion.seleccionarValida()
 
                 if opcionInterna == 1:
                     opcion = -1
