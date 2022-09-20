@@ -503,6 +503,9 @@ class Funcion:
 
         campeones = Campeones()
         campeon = campeones.printCampeones()
+
+        print("-----------------------")
+
         opcionesList = [False, False]
 
         if campeon != False:
@@ -527,12 +530,16 @@ class Funcion:
         return opcionesList
 
     def seleccionarEnemigo():
+
         print("-------------------------------"
               "\nSelecciona el campeon enemigo"
               "\n-------------------------------")
 
         campeones = Campeones()
         campeon = campeones.printCampeones()
+
+        print("-------------------------------")
+
         opcionesList = [False, False]
 
         if campeon != False:
